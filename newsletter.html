@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció a la Newsletter - Beny Jr</title>
+</head>
+<body>
+    <table border="1" width="100%">
+        <!-- Header -->
+        <tr>
+            <td colspan="3" align="center">
+                <h1>Inscripció a la Newsletter de Beny Jr</h1>
+                <p>Subscriu-te per rebre les últimes novetats i llançaments de l'artista!</p>
+            </td>
+             <tr>
+            <td colspan="3" align="center">
+                <table>
+                    <tr>
+                        <td style="padding: 10px; font-size: 18px;"><a href="index.html">Inici</a></td>
+                        <td style="padding: 10px; font-size: 18px;"><a href="discografia.html">Discografia</a></td>
+                        <td style="padding: 10px; font-size: 18px;"><a href="newsletter.html">Newsletter</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tr>
+
+        <!-- Form -->
+        <tr>
+            <td colspan="3" align="center">
+                <form action="/submit-newsletter" method="POST">
+                    <table width="80%" align="center">
+                        <tr>
+                            <td><label for="nom">Nom:</label></td>
+                            <td><input type="text" id="nom" name="nom" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cognoms">Cognoms:</label></td>
+                            <td><input type="text" id="cognoms" name="cognoms" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="edat">Edat:</label></td>
+                            <td><input type="number" id="edat" name="edat" min="18" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pais">País:</label></td>
+                            <td>
+                                <select id="pais" name="pais" required>
+                                    <option value="Espanya">Espanya</option>
+                                    <option value="França">França</option>
+                                    <option value="Itàlia">Itàlia</option>
+                                    <option value="Mèxic">Mèxic</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Altres">Altres</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Correu electrònic:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="interessos">Interessos:</label></td>
+                            <td>
+                                <textarea id="interessos" name="interessos" rows="4" cols="50" placeholder="Quins són els teus interessos relacionats amb l'artista?" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button type="submit">Inscriure's</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td colspan="3" align="center">
+                <p>&copy; 2024 Beny Jr - Tots els drets reservats.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
